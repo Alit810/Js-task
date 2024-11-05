@@ -1,0 +1,122 @@
+/* پایه‌های اصلی */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    width: 85%;
+    margin: auto;
+    background-color: #adadad;
+    color: #333;
+}
+
+/* تنظیمات برای تصویر */
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* استایل برای بخش محصولات */
+section.products {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* استایل برای بخش فیلتر */
+div.filters-container {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
+    display: inline-block;
+    height: fit-content;
+}
+
+/* استایل فرم جستجو */
+form.input-form input {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+form.input-form input:focus {
+    outline: none;
+    border-color: #00aaff;
+}
+
+form.input-form input:hover {
+    background-color: #f1f1f1;
+}
+
+/* استایل برای دکمه‌های شرکت‌ها */
+article.companies {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+article.companies button.company-btn {
+    padding: 0.6rem 0.5rem;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+article.companies button.company-btn:hover {
+    background-color: #0088cc;
+}
+
+/* استایل برای محصولات */
+div.products-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fill , 250px);
+    gap: 1rem;
+}
+
+article.product {
+    background-color: #fffdfd;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    padding: 1rem;
+    transition: box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+article.product:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+article.product img {
+    border-radius: 8px;
+    max-height: 150px;
+    margin-bottom: 1rem;
+    object-fit: contain;
+}
+
+article.product h5.product-name {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+article.product span.product-price {
+    font-size: 1rem;
+    color: #00aaff;
+    font-weight: bold;
+}
